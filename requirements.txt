@@ -1,0 +1,25 @@
+# Core LangChain packages
+langchain
+langchain-community
+langchain-chroma
+langchain-text-splitters
+langchain-huggingface
+
+# Vector database
+chromadb
+
+# ML/AI libraries
+transformers
+sentence-transformers
+torch
+
+# Document processing
+pypdf
+
+# Jupyter notebook support
+jupyter
+ipykernel
+ipywidgets
+
+# Utilities
+tqdm
