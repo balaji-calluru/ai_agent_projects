@@ -4,6 +4,14 @@ langchain-community
 langchain-chroma
 langchain-text-splitters
 langchain-huggingface
+langchain-core
+langchain-ollama
+
+# LangGraph for multi-agent systems
+langgraph
+
+# Search tools
+duckduckgo-search
 
 # Vector database
 chromadb
