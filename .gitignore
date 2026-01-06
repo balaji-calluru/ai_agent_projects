@@ -64,6 +64,10 @@ chroma_db/
 *.sqlite3
 *.sqlite
 
+# Research agent outputs
+research_results_*.json
+my_research.json
+
 # Model cache and temporary files
 .cache/
 *.cache
