@@ -1,4 +1,6 @@
+# ============================================================================
 # Python-generated files
+# ============================================================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -23,18 +25,27 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# ============================================================================
 # Virtual environments
-.venv
+# ============================================================================
+.venv/
 venv/
 ENV/
 env/
 .conda/
+conda/
 
+# ============================================================================
 # Jupyter Notebook
-.ipynb_checkpoints
+# ============================================================================
+.ipynb_checkpoints/
 *.ipynb_checkpoints/
+# Uncomment the line below if you want to exclude notebook outputs
+# *.ipynb
 
-# IDE
+# ============================================================================
+# IDE and Editor files
+# ============================================================================
 .vscode/
 .idea/
 *.swp
@@ -43,75 +54,113 @@ env/
 .spyderproject
 .spyproject
 .ropeproject
+*.sublime-project
+*.sublime-workspace
 
-# Environment variables
+# ============================================================================
+# Environment variables and secrets
+# ============================================================================
 .env
 .env.local
 .env.*.local
+.env.*
+*.key
+*.pem
+secrets/
+.secrets/
+config.ini
+settings.ini
 
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Project-specific
+# ============================================================================
+# Project-specific directories and files
+# ============================================================================
+# Vector database
 chroma_db/
-*.log
 *.sqlite3
 *.sqlite
+*.db
 
 # Research agent outputs
 research_results_*.json
 my_research.json
+reports/
+outputs/
 
+# Logs
+*.log
+logs/
+*.log.*
+
+# ============================================================================
 # Model cache and temporary files
+# ============================================================================
 .cache/
 *.cache
 models/
 *.bin
 *.safetensors
 .huggingface/
+.hf/
+checkpoints/
 
+# ============================================================================
 # Test outputs
+# ============================================================================
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 test-results/
 *.cover
+.coverage.*
+coverage.xml
+*.pytest_cache/
 
-# Notebook outputs and checkpoints
-.ipynb_checkpoints/
-*.ipynb_checkpoints/
-
-# Data files (uncomment if you don't want to track data)
-# data/
-
-# API keys and secrets (if any)
-*.key
-*.pem
-secrets/
-.secrets/
-
+# ============================================================================
 # Temporary files
+# ============================================================================
 tmp/
 temp/
 *.tmp
 *.bak
 *.swp
 *~
+*.orig
 
-# OS-specific
+# ============================================================================
+# OS-specific files
+# ============================================================================
+# macOS
 .DS_Store
+.DS_Store?
+._*
 .AppleDouble
 .LSOverride
 Icon
-._*
 .Spotlight-V100
 .Trashes
+
+# Windows
 ehthumbs.db
 Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================================================
+# Data files (uncomment if you don't want to track data)
+# ============================================================================
+# data/
+# *.pdf
+# *.csv
+# *.xlsx
+
+# ============================================================================
+# Build and distribution
+# ============================================================================
+*.whl
+*.tar.gz
+*.zip

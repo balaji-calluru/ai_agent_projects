@@ -1,4 +1,6 @@
+# ============================================================================
 # Core LangChain packages
+# ============================================================================
 langchain>=1.2.0
 langchain-community>=0.4.0
 langchain-chroma>=1.1.0
@@ -8,39 +10,65 @@ langchain-core>=1.2.0
 langchain-ollama>=1.0.0  # Required for OllamaLLM (replaces deprecated langchain_community.llms.Ollama)
 langchain-experimental>=0.4.0  # Optional: for experimental features
 
-# LangGraph for multi-agent systems
-langgraph>=1.0.0
+# ============================================================================
+# Multi-Agent Systems
+# ============================================================================
+langgraph>=1.0.0  # LangGraph for multi-agent systems
 
-# Search tools
+# ============================================================================
+# Google AI / Gemini API
+# ============================================================================
+google-genai>=1.0.0  # Google Gemini API for multi-agent systems (replaces deprecated google-generativeai)
+python-dotenv>=1.0.0  # For .env file support (API key management)
+# Note: google.colab is NOT installable via pip - it's only available in Google Colab runtime.
+# The notebook code handles this gracefully with try/except for local environments.
+
+# ============================================================================
+# Search Tools
+# ============================================================================
 duckduckgo-search>=8.0.0
 ddgs>=9.0.0  # DuckDuckGo Search library for research agent
 
-# Vector database
+# ============================================================================
+# Vector Database
+# ============================================================================
 chromadb>=1.4.0
 
-# ML/AI libraries
+# ============================================================================
+# ML/AI Libraries
+# ============================================================================
 transformers>=4.50.0
 sentence-transformers>=5.0.0
 torch>=2.0.0  # PyTorch - adjust version based on your system (CPU/GPU)
 
-# Document processing
+# ============================================================================
+# Document Processing
+# ============================================================================
 pypdf>=6.0.0
 
-# Jupyter notebook support
+# ============================================================================
+# Jupyter Notebook Support
+# ============================================================================
 jupyter>=1.0.0
 ipykernel>=6.0.0
 ipywidgets>=8.0.0
 jupyterlab>=4.0.0  # Optional: for JupyterLab interface
 
-# Web scraping and HTTP
+# ============================================================================
+# Web Scraping and HTTP
+# ============================================================================
 requests>=2.32.0
 beautifulsoup4>=4.14.0
 
-# Data analysis and visualization
+# ============================================================================
+# Data Analysis and Visualization
+# ============================================================================
 numpy>=2.0.0
 pandas>=2.3.0
 matplotlib>=3.10.0
 seaborn>=0.13.0
 
+# ============================================================================
 # Utilities
+# ============================================================================
 tqdm>=4.60.0
