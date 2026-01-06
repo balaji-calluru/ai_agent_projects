@@ -102,6 +102,8 @@ models/
 .huggingface/
 .hf/
 checkpoints/
+checkpoint.pth  # PyTorch model checkpoints
+*.pth  # PyTorch model files
 
 # ============================================================================
 # Test outputs

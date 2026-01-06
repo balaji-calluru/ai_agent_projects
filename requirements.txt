@@ -42,6 +42,12 @@ sentence-transformers>=5.0.0
 torch>=2.0.0  # PyTorch - adjust version based on your system (CPU/GPU)
 
 # ============================================================================
+# Reinforcement Learning
+# ============================================================================
+gymnasium>=1.0.0  # OpenAI Gym successor for RL environments (CartPole, etc.)
+pygame>=2.5.0  # Required for rendering Gymnasium environments (CartPole visualization)
+
+# ============================================================================
 # Document Processing
 # ============================================================================
 pypdf>=6.0.0
