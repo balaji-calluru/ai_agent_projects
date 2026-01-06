@@ -104,6 +104,29 @@ llama-cpp-python>=0.3.0  # Optional: For running local GGUF models (Mistral, Lla
 # 4. CrewAI will automatically detect and use Ollama when LLM_PROVIDER="ollama"
 
 # ============================================================================
+# OpenAI API Agent (Notebook 08)
+# ============================================================================
+# Core packages for building AI agents with OpenAI API
+# Note: openai, pandas, numpy, and python-dotenv are already listed above
+# This section documents the specific requirements for the OpenAI API agent notebook
+#
+# Required packages:
+# - openai>=1.0.0 (already listed in Multi-Agent Systems section)
+# - pandas>=2.3.0 (already listed in Data Analysis section)
+# - numpy>=2.0.0 (already listed in Data Analysis section)
+# - python-dotenv>=1.0.0 (already listed in Google AI / Gemini API section)
+#
+# Installation for this notebook:
+# pip install openai pandas numpy python-dotenv
+#
+# Setup:
+# 1. Get OpenAI API key from: https://platform.openai.com/api-keys
+# 2. Create .env file with: OPENAI_API_KEY=your_key_here
+# 3. Or set environment variable: export OPENAI_API_KEY='your_key_here'
+#
+# Model used: gpt-4o-mini (free tier friendly, cost-effective)
+
+# ============================================================================
 # Utilities
 # ============================================================================
 tqdm>=4.60.0
