@@ -40,8 +40,13 @@ conda/
 # ============================================================================
 .ipynb_checkpoints/
 *.ipynb_checkpoints/
+# Jupyter widget state (can cause rendering errors)
+.jupyter/
+widgets/
 # Uncomment the line below if you want to exclude notebook outputs
 # *.ipynb
+# Note: Widget outputs can cause "i is not a function" errors
+# Use the utility cell in the notebook to clean widget outputs if needed
 
 # ============================================================================
 # IDE and Editor files
@@ -70,6 +75,11 @@ secrets/
 .secrets/
 config.ini
 settings.ini
+# API Keys - NEVER commit these!
+# GEMINI_API_KEY
+# OPENAI_API_KEY
+# GOOGLE_API_KEY
+# ANTHROPIC_API_KEY
 
 # ============================================================================
 # Project-specific directories and files
@@ -85,6 +95,9 @@ research_results_*.json
 my_research.json
 reports/
 outputs/
+# CrewAI agent outputs (uncomment if you don't want to track generated content)
+# data/Agent_Output/
+# Note: *.md is NOT ignored by default - agent outputs in markdown format may be useful to track
 
 # Logs
 *.log
@@ -166,3 +179,16 @@ $RECYCLE.BIN/
 *.whl
 *.tar.gz
 *.zip
+
+
+# ============================================================================
+# LLM Models and Cache
+# ============================================================================
+models/
+*.gguf  # Local GGUF model files (can be large)
+*.ggml  # GGML model files
+.huggingface/
+.hf/
+# Ollama models (stored in ~/.ollama by default, but ignore any local copies)
+ollama_models/
+local_models/

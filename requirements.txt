@@ -14,14 +14,25 @@ langchain-experimental>=0.4.0  # Optional: for experimental features
 # Multi-Agent Systems
 # ============================================================================
 langgraph>=1.0.0  # LangGraph for multi-agent systems
+crewai>=1.7.0  # CrewAI for building and orchestrating AI agent crews
+crewai-tools>=1.7.0  # Additional tools for CrewAI agents (web search, file operations, etc.)
+openai>=1.0.0  # Required by CrewAI for LLM integration
+litellm>=1.0.0  # Required by CrewAI for LLM provider abstraction (supports Ollama, Gemini, etc.)
+# Note: CrewAI has strict dependency requirements that may conflict with other packages.
+# If you encounter conflicts, consider using a separate virtual environment for CrewAI projects.
 
 # ============================================================================
 # Google AI / Gemini API
 # ============================================================================
 google-genai>=1.0.0  # Google Gemini API for multi-agent systems (replaces deprecated google-generativeai)
-python-dotenv>=1.0.0  # For .env file support (API key management)
+python-dotenv>=1.0.0  # For .env file support (API key management) - REQUIRED for Gemini API key
 # Note: google.colab is NOT installable via pip - it's only available in Google Colab runtime.
 # The notebook code handles this gracefully with try/except for local environments.
+# 
+# Setup for Gemini:
+# 1. Get free API key from: https://aistudio.google.com/apikey
+# 2. Add GEMINI_API_KEY=your_key_here to .env file
+# 3. CrewAI will automatically use it when LLM_PROVIDER="gemini"
 
 # ============================================================================
 # Search Tools
@@ -33,6 +44,8 @@ ddgs>=9.0.0  # DuckDuckGo Search library for research agent
 # Vector Database
 # ============================================================================
 chromadb>=1.4.0
+# Note: CrewAI requires chromadb~=1.1.0, but langchain-chroma requires >=1.3.5.
+# The installed version (1.4.0) should work, but you may see dependency warnings.
 
 # ============================================================================
 # ML/AI Libraries
@@ -40,6 +53,9 @@ chromadb>=1.4.0
 transformers>=4.50.0
 sentence-transformers>=5.0.0
 torch>=2.0.0  # PyTorch - adjust version based on your system (CPU/GPU)
+tokenizers>=0.22.0,<=0.23.0  # Required by transformers (may conflict with CrewAI's requirement)
+# Note: CrewAI requires tokenizers~=0.20.3, but transformers requires >=0.22.0.
+# The installed version (0.22.2) should work, but you may see dependency warnings.
 
 # ============================================================================
 # Reinforcement Learning
@@ -73,6 +89,19 @@ numpy>=2.0.0
 pandas>=2.3.0
 matplotlib>=3.10.0
 seaborn>=0.13.0
+
+# ============================================================================
+# Local LLM Support (Optional)
+# ============================================================================
+llama-cpp-python>=0.3.0  # Optional: For running local GGUF models (Mistral, Llama, etc.)
+# Note: This is optional and only needed if you want to use local LLMs instead of cloud APIs.
+# Download GGUF models from: https://huggingface.co/TheBloke
+#
+# For Ollama (Recommended for local LLMs with CrewAI):
+# 1. Install Ollama: https://ollama.ai
+# 2. Pull a model: ollama pull mistral:7b
+# 3. Start Ollama: ollama serve (or it runs automatically)
+# 4. CrewAI will automatically detect and use Ollama when LLM_PROVIDER="ollama"
 
 # ============================================================================
 # Utilities
