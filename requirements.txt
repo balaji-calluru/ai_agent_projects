@@ -127,6 +127,36 @@ llama-cpp-python>=0.3.0  # Optional: For running local GGUF models (Mistral, Lla
 # Model used: gpt-4o-mini (free tier friendly, cost-effective)
 
 # ============================================================================
+# Agentic AI / Deep Q-Learning Agent (Notebook 09)
+# ============================================================================
+# Core packages for building AI trading agents using Deep Q-Learning
+# Note: torch, pandas, numpy, and matplotlib are already listed above
+#
+# Required packages:
+# - torch>=2.0.0 (already listed in ML/AI Libraries section)
+# - pandas>=2.3.0 (already listed in Data Analysis section)
+# - numpy>=2.0.0 (already listed in Data Analysis section)
+# - matplotlib>=3.10.0 (already listed in Data Analysis section)
+# - yfinance>=1.0.0 (NEW - for downloading stock market data)
+#
+# Installation for this notebook:
+# pip install yfinance pandas numpy torch matplotlib
+#
+# Setup:
+# 1. No API keys required - uses free Yahoo Finance data
+# 2. For GPU acceleration:
+#    - NVIDIA GPUs: Install PyTorch with CUDA support
+#    - Apple Silicon (M1/M2/M3): MPS support is built-in (automatic)
+#    - CPU: Works out of the box
+#
+# Features:
+# - Deep Q-Network (DQN) implementation
+# - Reinforcement Learning for stock trading
+# - Experience replay and epsilon-greedy exploration
+# - Automatic device selection (CUDA/MPS/CPU)
+yfinance>=1.0.0  # Yahoo Finance API for stock market data
+
+# ============================================================================
 # Utilities
 # ============================================================================
 tqdm>=4.60.0

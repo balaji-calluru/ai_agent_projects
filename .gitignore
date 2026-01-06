@@ -117,6 +117,10 @@ models/
 checkpoints/
 checkpoint.pth  # PyTorch model checkpoints
 *.pth  # PyTorch model files
+# Trading agent model files (Notebook 09)
+trading_agent*.pth
+dqn_model*.pth
+*_trained_model.pth
 
 # ============================================================================
 # Test outputs
@@ -174,6 +178,21 @@ $RECYCLE.BIN/
 # *.xlsx
 
 # ============================================================================
+# Agentic AI / Trading Agent outputs (Notebook 09)
+# ============================================================================
+# Training outputs and logs
+training_logs/
+training_results/
+episode_rewards*.csv
+training_metrics*.json
+# Stock data cache (if downloaded)
+stock_data_cache/
+*.h5  # HDF5 files (if used for data storage)
+# Portfolio tracking files
+portfolio_history*.csv
+trading_history*.csv
+
+# ============================================================================
 # Build and distribution
 # ============================================================================
 *.whl
@@ -192,3 +211,14 @@ models/
 # Ollama models (stored in ~/.ollama by default, but ignore any local copies)
 ollama_models/
 local_models/
+
+# ============================================================================
+# Tools and Helper Scripts
+# ============================================================================
+# Note: Helper scripts (create_*.py, download_*.py, etc.) should be saved in tools/
+# The tools/ folder is tracked in git, but temporary outputs are ignored
+tools/__pycache__/  # Python cache in tools folder
+tools/*.pyc  # Compiled Python files
+tools/*.pyo  # Optimized Python files
+tools/temp/  # Temporary files created by helper scripts
+tools/output/  # Output files from helper scripts (if any)
