@@ -1,0 +1,13 @@
+# ============================================================================
+# Project 06: Build an AI Agent to Master a Game using Python
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/06-game-agent.txt
+
+# Reinforcement Learning
+gymnasium>=1.0.0  # OpenAI Gym successor for RL environments
+pygame>=2.5.0  # Required for rendering Gymnasium environments
+
+# ML/AI Libraries
+torch>=2.0.0  # PyTorch
+numpy>=2.0.0  # Already in base, but explicitly listed for clarity
+

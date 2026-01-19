@@ -1,0 +1,18 @@
+# ============================================================================
+# Project 01: Building an Agentic RAG Pipeline
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/01-rag-pipeline.txt
+
+# Core LangChain packages
+langchain>=1.2.0
+langchain-community>=0.4.0
+langchain-chroma>=1.3.5  # Vector database integration
+langchain-text-splitters>=1.1.0
+langchain-core>=1.2.0
+
+# Vector Database
+chromadb>=1.4.0  # Compatible with langchain-chroma
+
+# Document Processing
+pypdf>=6.0.0
+

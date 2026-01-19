@@ -1,0 +1,19 @@
+# ============================================================================
+# Project 07: Building AI Agents with CrewAI using Python
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/07-crewai.txt
+# 
+# IMPORTANT: CrewAI has strict dependency requirements that conflict with other projects.
+# Consider using a separate virtual environment for CrewAI projects.
+
+# Multi-Agent Systems - CrewAI
+crewai>=1.7.0  # CrewAI for building and orchestrating AI agent crews
+crewai-tools>=1.7.0  # Additional tools for CrewAI agents
+openai>=1.0.0  # Required by CrewAI for LLM integration
+litellm>=1.0.0  # Required by CrewAI for LLM provider abstraction
+
+# NOTE: CrewAI will automatically install:
+# - chromadb~=1.1.0 (conflicts with langchain-chroma)
+# - tokenizers~=0.20.3 (conflicts with transformers>=0.22.0)
+# - beautifulsoup4~=4.13.4 (conflicts with beautifulsoup4>=4.14.0)
+

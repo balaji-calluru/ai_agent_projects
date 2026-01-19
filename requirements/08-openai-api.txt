@@ -1,0 +1,12 @@
+# ============================================================================
+# Project 08: Building an AI Agent using OpenAI API
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/08-openai-api.txt
+
+# OpenAI API
+openai>=1.0.0  # OpenAI API client
+
+# Data Analysis (already in base, but listed for clarity)
+numpy>=2.0.0
+pandas>=2.3.0
+

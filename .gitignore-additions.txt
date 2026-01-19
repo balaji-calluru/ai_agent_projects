@@ -1,0 +1,7 @@
+# Virtual environments (add to .gitignore if not already there)
+venv-project*/
+venv-*/
+.venv*/
+
+# Jupyter kernels are stored in user directory, not in project
+# No need to add to .gitignore

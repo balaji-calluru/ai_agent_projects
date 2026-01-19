@@ -1,0 +1,13 @@
+# ============================================================================
+# Project 02: Build a Multi-Agent System With LangGraph
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/02-langgraph.txt
+
+# Core LangChain packages
+langchain>=1.2.0
+langchain-community>=0.4.0
+langchain-core>=1.2.0
+
+# Multi-Agent Systems
+langgraph>=1.0.0  # LangGraph for multi-agent systems
+

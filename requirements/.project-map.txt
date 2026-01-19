@@ -1,0 +1,32 @@
+Project Requirements File Mapping
+==================================
+
+01 - Building an Agentic RAG Pipeline
+  → requirements/01-rag-pipeline.txt
+
+02 - Build a Multi-Agent System With LangGraph
+  → requirements/02-langgraph.txt
+
+03 - Build a Real-Time AI Assistant Using RAG + LangChain
+  → requirements/03-rag-langchain.txt
+
+04 - Build an AI Agent to Automate Your Research
+  → requirements/04-research-agent.txt
+
+05 - Building a Multi-Agent System using Gemini API
+  → requirements/05-gemini-api.txt
+
+06 - Build an AI Agent to Master a Game using Python
+  → requirements/06-game-agent.txt
+
+07 - Building AI Agents with CrewAI using Python
+  → requirements/07-crewai.txt
+
+08 - Building an AI Agent using OpenAI API
+  → requirements/08-openai-api.txt
+
+09 - Building an AI Agent using Agentic AI
+  → requirements/09-agentic-ai.txt
+
+10 - Build an AI research agent for image analysis
+  → requirements/10-image-research.txt

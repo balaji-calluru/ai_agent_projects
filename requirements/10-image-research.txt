@@ -1,0 +1,25 @@
+# ============================================================================
+# Project 10: Build an AI research agent for image analysis
+# ============================================================================
+# Install: pip install -r requirements/base.txt -r requirements/10-image-research.txt
+#
+# IMPORTANT: This project uses CrewAI which has strict dependency requirements.
+# Consider using a separate virtual environment for this project.
+
+# Multi-Agent Systems - CrewAI
+crewai>=1.7.0  # CrewAI for building and orchestrating AI agent crews
+crewai-tools>=1.7.0  # Additional tools for CrewAI agents
+openai>=1.0.0  # Required by CrewAI for LLM integration
+litellm>=1.0.0  # Required by CrewAI for LLM provider abstraction
+
+# Data Validation
+pydantic>=2.0.0  # Data validation and structured output for LLM responses
+
+# Image Processing
+pillow>=10.0.0  # Image processing library (PIL)
+
+# NOTE: CrewAI will automatically install:
+# - chromadb~=1.1.0 (conflicts with langchain-chroma)
+# - tokenizers~=0.20.3 (conflicts with transformers>=0.22.0)
+# - beautifulsoup4~=4.13.4 (conflicts with beautifulsoup4>=4.14.0)
+
